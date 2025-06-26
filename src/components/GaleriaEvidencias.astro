@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+
+// Importa manualmente las imágenes
+import img1 from "../assets/evidencias/Evidencia1.png";
+import img2 from "../assets/evidencias/Evidencia2.png";
+import img3 from "../assets/evidencias/Evidencia3.png";
+import img4 from "../assets/evidencias/Evidencia4.png";
+// Agrega más según sea necesario
+
+const evidencias = [img1, img2, img3, img4];
+---
+
+<div class="galeria">
+  {evidencias.map((img) => (
+    <Image src={img} alt="Evidencia Fundación" width={300} height={200} class="evidencia" />
+  ))}
+</div>
+
+<style>
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .evidencia {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .evidencia:hover {
+    transform: scale(1.05);
+  }
+</style>

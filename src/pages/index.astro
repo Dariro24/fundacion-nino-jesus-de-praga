@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import portada from '../assets/imagen-portada.jpg';
+---
+
+<BaseLayout title="Inicio - Fundación Niño Jesús de Praga">
+  <section>
+    <h1>Bienvenidos a la Fundación Niño Jesús de Praga</h1>
+    <p>
+      Desde 2009 trabajamos con compromiso y amor por el bienestar de niños, jóvenes y familias en situación de vulnerabilidad. Nuestro enfoque integra educación, salud, nutrición y formación con valores cristianos, para construir una sociedad más justa y solidaria.
+    </p>
+
+    <div style="margin: 2rem 0; text-align: center;">
+      <Image src={portada} alt="Fundación en acción" width={800} style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+    </div>
+
+    <h2 style="margin-top: 3rem;">Explora nuestro sitio</h2>
+    <ul style="display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; padding: 0; margin-top: 1rem;">
+      <li style="flex: 1 1 200px;">
+        <a href="/quienes-somos" style="display: block; padding: 1rem; background-color: #002d72; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          ¿Quiénes somos?
+        </a>
+      </li>
+      <li style="flex: 1 1 200px;">
+        <a href="/portafolio" style="display: block; padding: 1rem; background-color: #002d72; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          Portafolio de servicios
+        </a>
+      </li>
+      <li style="flex: 1 1 200px;">
+        <a href="/experiencia" style="display: block; padding: 1rem; background-color: #002d72; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          Nuestra experiencia
+        </a>
+      </li>
+      <li style="flex: 1 1 200px;">
+        <a href="/contacto" style="display: block; padding: 1rem; background-color: #002d72; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          Contáctanos
+        </a>
+      </li>
+    </ul>
+  </section>
+</BaseLayout>

@@ -151,6 +151,38 @@ button:hover {
   background-color: #0044aa;
 }
 
+.portada-imagen {
+  margin: 2rem 0;
+  text-align: center;
+}
+.portada-imagen img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botones-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.botones-navegacion a {
+  display: block;
+  padding: 1rem;
+  background-color: #002d72;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.botones-navegacion a:hover {
+  background-color: #0040a0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {

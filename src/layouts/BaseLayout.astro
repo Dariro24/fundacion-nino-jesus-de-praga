@@ -10,6 +10,13 @@ import logo from "../assets/logo.png";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title ?? "Fundación Niño Jesús de Praga"}</title>
     <link rel="stylesheet" href="/styles.css" />
+    <meta name="description" content="Sitio oficial de la Fundación Niño Jesús de Praga, dedicada a la educación, salud y bienestar de comunidades vulnerables." />
+    <meta name="author" content="Fundación Niño Jesús de Praga" />
+    <meta property="og:title" content="Fundación Niño Jesús de Praga" />
+    <meta property="og:description" content="Comprometidos con el desarrollo integral de niños, jóvenes y familias." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fundacionninojesusdepraga.com" />
+    <meta property="og:image" content="/assets/logo.png" />
   </head>
   <body>
     <header>
@@ -44,16 +51,6 @@ import logo from "../assets/logo.png";
       </p>
     </footer>
 
-    <script>
-      const toggle = document.getElementById('menu-toggle');
-      const mainNav = document.getElementById('main-nav');
-      const nav = mainNav ? mainNav.querySelector('ul') : null;
-
-      if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-          nav.classList.toggle('active');
-        });
-      }
-    </script>
+  <script type="module" src="/scripts/menu.js"></script>
   </body>
 </html>
